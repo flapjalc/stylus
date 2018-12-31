@@ -6,9 +6,8 @@ block head
   - var pageKeywords = 'Ключевые слова главной страницы';
 
 block content
-  +breadcrumbs([{href: '/index', text: 'Главная'}, {href: '/about', text: 'О компании'}])
+  +breadcrumbs([{href: 'index', text: 'Главная'}, {href: 'about', text: 'О компании'}])
   h1 Главная страница
   p Содержимое главной страницы
-
 block footer
   include ../modules/socials/socials
