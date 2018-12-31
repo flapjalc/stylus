@@ -1,0 +1,5 @@
+nav.main__nav
+ul.nav__list
+  each href,title in jsons.nav.navPages
+    li.nav__item
+      a(href= href+'.html').nav__link= title

@@ -1,0 +1,20 @@
+{
+  "socialsData":
+  [
+    {
+      "title" : "Вконтакте",
+      "prefix" : "vk",
+      "href" : "https://vk.com/"
+    },
+    {
+      "title" : "Фейсбук",
+      "prefix" : "fb",
+      "href" : "https://fb.com/"
+    },
+    {
+      "title" : "Инстаграм",
+      "prefix" : "inst",
+      "href" : "https://instagram.com/"
+    }
+  ]
+}

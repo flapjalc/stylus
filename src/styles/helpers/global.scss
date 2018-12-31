@@ -1,0 +1,54 @@
+html {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: $paragraph-size;
+  font-weight: 400;
+  line-height: 24px;
+  color: $paragraph-color;
+}
+
+h1 {
+  margin: 36px 0;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h2 {
+  margin: 24px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  margin: 18px 0;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
