@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import sass from 'gulp-sass';
+import stylus from 'gulp-stylus';
 import plumber from 'gulp-plumber';
 import cssmin from 'gulp-csso';
 import autoprefixer from 'gulp-autoprefixer';
@@ -7,9 +7,9 @@ import rename from 'gulp-rename';
 import server from 'browser-sync';
 
 gulp.task("styles", function() {
-	gulp.src("src/styles/style.scss")
+	gulp.src("src/styles/style.styl")
     .pipe(plumber())
-		.pipe(sass())
+		.pipe(stylus())
     .pipe(autoprefixer({
         browsers: ["last 2 versions"]
     }))

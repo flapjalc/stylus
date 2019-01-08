@@ -42,7 +42,6 @@
     "value-no-vendor-prefix": true,
 
     "property-case": "lower",
-    "property-no-vendor-prefix": true,
 
     "keyframe-declaration-no-important": true,
 
@@ -93,7 +92,7 @@
     "selector-list-comma-space-before": "never",
 
     "rule-empty-line-before": ["always", {
-      "except": ["first-nested"],
+      "except": ["always"],
       "ignore": ["after-comment"]
     }],
 
