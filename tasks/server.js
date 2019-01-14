@@ -10,8 +10,9 @@ gulp.task("serve", function() {
     cors: true,
     ui: false
   });
-  gulp.watch("src/{styles,modules}/**/*.styl", ["styles"]);
-  gulp.watch("src/{pages,modules,layouts}/**/*.pug", () => run('html', server.reload));
+  gulp.watch("src/{styles,components}/**/*.styl", ["styles"]);
+  gulp.watch("src/{pages,components,layouts}/**/*.pug", () => run('html', server.reload));
+	gulp.watch('src/{scripts,components}/**/*.js', () => run('scripts', server.reload));
 	gulp.watch('src/resources/**/*', () => run('copy', server.reload));
-	gulp.watch('src/modules/**/*.{png,jpg,jpeg}', () => run('img', 'webp', server.reload));
+	gulp.watch('src/components/**/*.{png,jpg,jpeg}', () => run('img', 'webp', server.reload));
 });

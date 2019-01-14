@@ -1,5 +1,0 @@
-mixin breadcrumbs(items)
-  ol.breadcrumbs
-    each item, index in items
-      li.breadcrumbs__item(class= (items.length === index + 1) ? 'breadcrumbs__item--current' : false )
-        a(href='/' +item.href+ '.html')= item.text

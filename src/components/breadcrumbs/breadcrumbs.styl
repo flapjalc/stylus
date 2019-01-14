@@ -1,0 +1,16 @@
+.breadcrumbs
+  reset-list()
+
+  &__item
+    position relative
+    display inline
+    padding-right 25px
+    &:after
+      content: ">"
+      position absolute
+      right 7px
+
+    &--current
+      padding-right 0
+      &:after
+        display none

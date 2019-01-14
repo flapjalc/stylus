@@ -1,0 +1,10 @@
+- var index = 2;
+
+ul.pagination
+  li.pagination__item.pagination__item--prev= 'Предыдущая'
+  li.pagination__item= '1'
+  while index <= 3
+    li.pagination__item
+      a(href="#")= index++
+  li.pagination__item.pagination__item--next
+    a(href="#")= 'Следующая'

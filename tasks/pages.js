@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 
 const data = {}
-const dir = 'app/modules/'
+const dir = 'src/components/'
 
 const modules = fs.readdirSync( dir )
 modules.forEach( item => {

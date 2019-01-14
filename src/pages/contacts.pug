@@ -1,0 +1,17 @@
+extends ../layouts/layout-default
+
+block head
+  - var currentPage = 'Контакты';
+  - var pageTitle = 'Контакты';
+  - var pageDescription = 'Описание страницы';
+  - var pageKeywords = 'Ключевые слова страницы';
+
+block content
+  +breadcrumbs([
+    { href: 'index', text: 'Главная' },
+    { href: 'about', text: 'Контакты' }
+  ])
+  h1 Контакты
+  p Содержимое страницы
+block footer
+  include ../components/socials/socials

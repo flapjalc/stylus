@@ -4,7 +4,7 @@ import svgmin from 'gulp-svgmin';
 import rename from 'gulp-rename';
 
 gulp.task("sprite", function () {
-	return gulp.src("src/modules/**/icon-*.svg")
+	return gulp.src("src/components/**/icon-*.svg")
   .pipe(svgmin({
     js2svg: {
       pretty: true
