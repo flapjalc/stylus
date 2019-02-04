@@ -1,6 +1,7 @@
 {
   "navPages": {
     "Главная" : "/index",
-    "Контакты" : "/contacts"
+    "Контакты" : "/contacts",
+    "Гугл" : "http://google.com"
   }
 }

@@ -1,4 +1,6 @@
 ul.socials
   each item in jsons.socials.socialsData
     li.socials__item
-      a(href=item.href target="_blank" class="socials__link socials__link--" +item.prefix ) #{item.title}
+      a(href=item.href class="socials__link socials__link--" +item.prefix target="_blank" rel="noopener" title= "Наш "+ item.title)
+        span.visually-hidden #{item.title}
+        +icon(item.prefix)

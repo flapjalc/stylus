@@ -8,13 +8,13 @@
     },
     {
       "title" : "Фейсбук",
-      "prefix" : "fb",
+      "prefix" : "facebook",
       "href" : "https://fb.com/"
     },
     {
-      "title" : "Инстаграм",
-      "prefix" : "inst",
-      "href" : "https://instagram.com/"
+      "title" : "Ютуб",
+      "prefix" : "youtube",
+      "href" : "https://youtube.com/"
     }
   ]
 }

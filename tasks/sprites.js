@@ -3,7 +3,7 @@ import svgstore from 'gulp-svgstore';
 import svgmin from 'gulp-svgmin';
 import rename from 'gulp-rename';
 
-gulp.task("sprite", function () {
+gulp.task("sprites", function () {
 	return gulp.src("src/components/**/icon-*.svg")
   .pipe(svgmin({
     js2svg: {

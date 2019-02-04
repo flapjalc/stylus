@@ -3,6 +3,10 @@ nav.navigation
     each href,title in jsons.navigation.navPages
       if currentPage == title
         li.navigation__item.navigation__item--current= title
-      else
-        li.navigation__item
-          a(href= href+'.html').navigation__link= title
+      if currentPage != title
+        if (href.indexOf("http") == 0)
+          li.navigation__item
+            a(href= href target="_blank").navigation__link= title
+        else
+          li.navigation__item
+            a(href= href+'.html').navigation__link= title
